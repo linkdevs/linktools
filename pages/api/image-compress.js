@@ -18,7 +18,7 @@ export default async (req, res) => {
         if (!file.startsWith('data:image/')) return res.status(400).json({ error: 'File is not an image' });
 
         const base64Data = file.replace(/^data:image\/\w+;base64,/, "");
-        const fileBuffer = new Buffer(base64Data, 'base64');
+        const fileBuffer = new Buffer.from(base64Data, 'base64');
         const metadata = await sharp(fileBuffer).metadata();
 
         var sharped = await sharp(fileBuffer)
