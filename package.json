@@ -1,0 +1,17 @@
+{
+  "name": "linktools",
+  "description": "A collection of tools.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "dbwalker": "^0.0.38",
+    "formidable": "^2.0.1",
+    "next": "^12.1.4",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "sharp": "^0.30.3"
+  }
+}
